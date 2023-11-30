@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Gian Franco Parisi </title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <nav id="nav">
+            <div class="body"></div>
+            <li class="boton" id="botonPaginaPrincipal"> <a href="index.html"> Página Principal </li></a> 
+           <li class="boton" id="botonDatosPersonales"> <a href="DatosPersonales.html"> Datos Personales </li></a> 
+           <li class="boton" id="botonExperiencia"> <a href="Experiencia.html"> Experiencia </li> </a> 
+            <li class="boton" id="botonEstudios"> <a href="Competencia.html"> Estudios </li> </a> 
+        </nav>
+          <h1 id="titulo">Curriculum Vitae </h1>
+    </header>
+    <main><div>
+    <h2 id="subtitulo">Datos Personales </h2>
+    <img src="img/GianFoto.jpg" alt="Mi foto">
+    <label for="Gian">Foto de Gian Parisi</label>
+   
+   
+    <h3 class="texto">Sobre mi:</h3>
+    <ul class="texto">
+        <li>Edad: 18 años.</li>
+        <li>Fecha de nacimiento: 30 de Abril 2005</li>
+        <li>Contacto: gianitop9830@gmail.com</li>
+        <li><a href="https://www.webcampus.uade.edu.ar/">Contacto UADE: giparisi@uade.edu.ar</a></li>
+    </ul>
+        
+    
+        </p></div>
+    </main>
+    <footer id="footer">
+        <a href="https://www.uade.edu.ar/" target="_blank">
+            <img class="logouade" src="img/uadepng.png" alt="Logo de UADE">
+          </a>
+    </footer>
+    <script defer>
+        document.addEventListener('DOMContentLoaded', function()  {
+            console.log('Página completamente cargada');
+    
+            document.addEventListener('keydown', function(event) {
+                console.log('Tecla presionada: ' + event.key);
+            });
+    
+            document.getElementById('miFormulario').addEventListener('submit', function(event) {
+                console.log('Formulario enviado');
+                event.preventDefault();
+            });
+    
+            function mostrarMensajeBienvenida() {
+                var nombre = prompt('Por favor, ingresa tu nombre:');
+    
+                if (nombre) {
+                    alert('¡Hola, ' + nombre + '! Bienvenido/a a mi CV. Disfruta y Gracias!.');
+                } else {
+                    alert('¡Bienvenido/a a mi CV. Disfruta y Gracias!');
+                }
+            }
+    
+            mostrarMensajeBienvenida();
+        });
+    </script>
+
+</body>
+</html>
